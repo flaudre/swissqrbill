@@ -1,6 +1,6 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
-import { SwissQRBill } from "swissqrbill/svg";
+import { SwissQRBill } from "./svg-lib.js";
 
 const defaultData = {
   amount: 1994.75,

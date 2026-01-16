@@ -155,6 +155,12 @@ document.body.appendChild(svg.element);
 
 If you only need the QR slip (the bottom part of the bill), you can run the helper script included in this repository. It generates an SVG QR slip either from the built-in sample data or from a JSON file you provide.
 
+Before running the script, build the project so the ESM artifacts are available:
+
+```sh
+npm run build
+```
+
 ```sh
 node scripts/create-qr-slip.js
 node scripts/create-qr-slip.js ./my-qr-data.json ./output/my-qr-slip.svg
