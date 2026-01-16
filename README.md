@@ -151,6 +151,18 @@ document.body.appendChild(svg.element);
 <br/>
 <br/>
 
+## QR slip script
+
+If you only need the QR slip (the bottom part of the bill), you can run the helper script included in this repository. It generates an SVG QR slip either from the built-in sample data or from a JSON file you provide.
+
+```sh
+node scripts/create-qr-slip.js
+node scripts/create-qr-slip.js ./my-qr-data.json ./output/my-qr-slip.svg
+```
+
+<br/>
+<br/>
+
 ## Creating a complete invoice
 
 It is possible to create a complete invoice with SwissQRBill. This means that you can add your own content above the QR Bill.
